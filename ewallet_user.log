@@ -1,0 +1,587 @@
+2024-07-29T20:05:39.694+05:30  INFO 8404 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 8404 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-29T20:05:39.696+05:30  INFO 8404 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-29T20:05:40.802+05:30  INFO 8404 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-29T20:05:40.874+05:30  INFO 8404 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-07-29T20:05:41.716+05:30  INFO 8404 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-29T20:05:41.731+05:30  INFO 8404 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-29T20:05:41.732+05:30  INFO 8404 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-29T20:05:41.810+05:30  INFO 8404 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-29T20:05:41.811+05:30  INFO 8404 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2048 ms
+2024-07-29T20:05:42.043+05:30  INFO 8404 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-29T20:05:42.120+05:30  INFO 8404 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-29T20:05:42.169+05:30  INFO 8404 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-29T20:05:42.596+05:30  INFO 8404 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-29T20:05:42.629+05:30  INFO 8404 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-29T20:05:43.291+05:30  INFO 8404 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a7e799e
+2024-07-29T20:05:43.295+05:30  INFO 8404 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-29T20:05:44.424+05:30  INFO 8404 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-29T20:05:44.863+05:30  INFO 8404 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T20:05:45.391+05:30  WARN 8404 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-29T20:05:45.434+05:30  INFO 8404 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-29T20:05:46.022+05:30  INFO 8404 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-29T20:05:46.033+05:30  INFO 8404 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 6.914 seconds (process running for 7.521)
+2024-07-29T20:29:42.053+05:30  INFO 8404 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T20:29:42.199+05:30  INFO 8404 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-29T20:29:42.489+05:30  INFO 8404 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-29T21:08:34.929+05:30  INFO 18104 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 18104 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-29T21:08:34.932+05:30  INFO 18104 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-29T21:08:35.859+05:30  INFO 18104 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-29T21:08:35.932+05:30  INFO 18104 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-07-29T21:08:36.799+05:30  INFO 18104 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-29T21:08:36.814+05:30  INFO 18104 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-29T21:08:36.815+05:30  INFO 18104 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-29T21:08:36.888+05:30  INFO 18104 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-29T21:08:36.888+05:30  INFO 18104 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1878 ms
+2024-07-29T21:08:37.126+05:30  INFO 18104 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-29T21:08:37.201+05:30  INFO 18104 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-29T21:08:37.251+05:30  INFO 18104 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-29T21:08:37.689+05:30  INFO 18104 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-29T21:08:37.729+05:30  INFO 18104 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-29T21:08:38.263+05:30  INFO 18104 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a4b288a
+2024-07-29T21:08:38.272+05:30  INFO 18104 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-29T21:08:39.590+05:30  INFO 18104 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-29T21:08:39.672+05:30  INFO 18104 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:08:40.158+05:30  WARN 18104 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-29T21:08:40.193+05:30  INFO 18104 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-29T21:08:40.797+05:30  INFO 18104 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-29T21:08:40.809+05:30  INFO 18104 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 6.466 seconds (process running for 7.105)
+2024-07-29T21:14:33.637+05:30  INFO 18104 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-29T21:14:33.638+05:30  INFO 18104 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-29T21:14:33.640+05:30  INFO 18104 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-29T21:14:33.789+05:30 ERROR 18104 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ewallet.user_microservice.dto.CreateUserRequest]] with root cause
+
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ewallet.user_microservice.dto.CreateUserRequest` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 5]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1887) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1375) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1508) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:348) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2125) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1501) ~[jackson-databind-2.17.2.jar:2.17.2]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:184) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:135) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-07-29T21:14:50.075+05:30  INFO 18104 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:14:50.081+05:30  INFO 18104 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-29T21:14:50.113+05:30  INFO 18104 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-29T21:15:45.260+05:30  INFO 12896 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 12896 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-29T21:15:45.264+05:30  INFO 12896 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-29T21:15:46.288+05:30  INFO 12896 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-29T21:15:46.376+05:30  INFO 12896 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-07-29T21:15:47.247+05:30  INFO 12896 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-29T21:15:47.262+05:30  INFO 12896 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-29T21:15:47.262+05:30  INFO 12896 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-29T21:15:47.333+05:30  INFO 12896 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-29T21:15:47.334+05:30  INFO 12896 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2006 ms
+2024-07-29T21:15:47.537+05:30  INFO 12896 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-29T21:15:47.623+05:30  INFO 12896 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-29T21:15:47.679+05:30  INFO 12896 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-29T21:15:48.065+05:30  INFO 12896 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-29T21:15:48.097+05:30  INFO 12896 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-29T21:15:48.619+05:30  INFO 12896 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c6ac73c
+2024-07-29T21:15:48.621+05:30  INFO 12896 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-29T21:15:49.759+05:30  INFO 12896 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-29T21:15:49.823+05:30  INFO 12896 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:15:50.348+05:30  WARN 12896 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-29T21:15:50.394+05:30  INFO 12896 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-29T21:15:51.009+05:30  INFO 12896 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-29T21:15:51.026+05:30  INFO 12896 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 6.366 seconds (process running for 6.924)
+2024-07-29T21:15:58.752+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-29T21:15:58.753+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-29T21:15:58.758+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-07-29T21:15:59.051+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user created: User(id=0, name=abhay, email=abhay@example.com, phoneNum=1234567890, password=password, userType=USER, userStatus=ACTIVE, authorities=[USER], userIdentificationType=PAN, userIdentificationValue=a1, createdOn=null, updatedOn=null)
+2024-07-29T21:15:59.219+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user saved: User(id=1, name=abhay, email=abhay@example.com, phoneNum=1234567890, password=password, userType=USER, userStatus=ACTIVE, authorities=[USER], userIdentificationType=PAN, userIdentificationValue=a1, createdOn=2024-07-29 21:15:59.111493, updatedOn=Mon Jul 29 21:15:59 IST 2024)
+2024-07-29T21:15:59.295+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = user-microservice-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-07-29T21:15:59.352+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-07-29T21:15:59.550+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=user-microservice-producer-1] Instantiated an idempotent producer.
+2024-07-29T21:15:59.612+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-07-29T21:15:59.612+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-07-29T21:15:59.612+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1722267959610
+2024-07-29T21:15:59.984+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:15:59.987+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:15:59.988+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:00.091+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:00.091+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:00.091+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:00.195+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:00.196+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:00.196+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:00.435+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:00.437+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:00.437+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:00.844+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:00.845+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:00.845+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:01.553+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:01.554+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:01.554+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:02.402+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:02.403+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:02.403+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:03.357+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:03.358+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:03.358+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:04.359+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:04.359+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:04.360+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:05.385+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:05.386+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:05.386+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:06.386+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:06.387+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:06.387+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:07.388+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:07.389+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:07.389+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:08.389+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:08.391+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:08.391+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:09.372+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:09.372+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:09.373+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:10.374+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:10.374+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:10.374+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:11.184+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:11.185+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:11.185+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:12.232+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:12.232+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:12.233+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:13.234+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:13.235+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:13.235+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:14.235+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:14.236+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:14.236+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:15.198+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:15.198+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:15.198+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:16.209+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:16.209+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:16.209+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:17.217+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:17.218+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:17.218+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:18.221+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:18.222+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:18.222+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:19.184+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:19.186+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:19.187+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:20.198+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:20.199+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:20.199+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:21.009+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:21.010+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:21.010+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:22.021+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:22.022+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:22.022+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:23.022+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:23.025+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:23.025+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:23.987+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:23.988+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:23.988+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:24.951+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:24.951+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:24.952+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:25.952+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:25.953+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:25.954+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:26.954+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:26.955+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:26.955+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:27.981+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:27.982+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:27.982+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:28.983+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:28.984+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:28.984+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:29.994+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:29.995+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:29.995+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:30.996+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:30.996+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:30.997+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:31.998+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:31.999+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:31.999+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:33.001+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:33.001+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:33.002+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:34.013+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:34.014+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:34.014+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:34.923+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:34.923+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:34.924+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:35.925+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:35.925+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:35.925+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:36.927+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:36.928+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:36.928+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:37.888+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:37.889+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:37.889+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:38.800+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:38.801+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:38.802+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:39.660+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:39.661+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:39.661+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:40.661+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Node -1 disconnected.
+2024-07-29T21:16:40.662+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-07-29T21:16:40.662+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-07-29T21:16:41.938+05:30  WARN 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=user-microservice-producer-1] Error while fetching metadata with correlation id 1 : {user_created=LEADER_NOT_AVAILABLE}
+2024-07-29T21:16:41.940+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=user-microservice-producer-1] Cluster ID: i_IDOsjFRWGy5kCAMyN6PQ
+2024-07-29T21:16:42.062+05:30  INFO 12896 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=user-microservice-producer-1] ProducerId set to 2000 with epoch 0
+2024-07-29T21:16:42.137+05:30  INFO 12896 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user saved msg published to kafka: {"NAME":"abhay","EMAIL":"abhay@example.com","PHONENUM":"1234567890","USERID":1}
+2024-07-29T21:23:15.518+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=user-microservice-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-07-29T21:23:15.562+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-07-29T21:23:15.563+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-07-29T21:23:15.564+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-07-29T21:23:15.564+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-07-29T21:23:15.569+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for user-microservice-producer-1 unregistered
+2024-07-29T21:23:15.608+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:23:15.657+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-29T21:23:15.754+05:30  INFO 12896 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-29T21:27:21.687+05:30  INFO 11312 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 11312 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-29T21:27:21.690+05:30  INFO 11312 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-29T21:27:22.835+05:30  INFO 11312 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-29T21:27:22.949+05:30  INFO 11312 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2024-07-29T21:27:23.895+05:30  INFO 11312 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-29T21:27:23.915+05:30  INFO 11312 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-29T21:27:23.916+05:30  INFO 11312 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-29T21:27:24.000+05:30  INFO 11312 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-29T21:27:24.001+05:30  INFO 11312 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2247 ms
+2024-07-29T21:27:24.222+05:30  INFO 11312 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-29T21:27:24.314+05:30  INFO 11312 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-29T21:27:24.364+05:30  INFO 11312 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-29T21:27:24.770+05:30  INFO 11312 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-29T21:27:24.806+05:30  INFO 11312 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-29T21:27:25.321+05:30  INFO 11312 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2f471037
+2024-07-29T21:27:25.323+05:30  INFO 11312 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-29T21:27:26.528+05:30  INFO 11312 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-29T21:27:26.599+05:30  INFO 11312 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:27:27.146+05:30  WARN 11312 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-29T21:27:27.190+05:30  INFO 11312 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-29T21:27:27.847+05:30  INFO 11312 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-29T21:27:27.866+05:30  INFO 11312 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 6.789 seconds (process running for 7.358)
+2024-07-29T21:27:37.120+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-29T21:27:37.122+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-29T21:27:37.128+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-07-29T21:27:37.938+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user created: User(id=0, name=abhay, email=abhay@example.com, phoneNum=1234567890, password=$2a$10$ZWft9nQVRJq1VXeTXhGBJ.x.uLrA.zOsMpirMfOehToqlEicdM4J6, userType=USER, userStatus=ACTIVE, authorities=[USER], userIdentificationType=PAN, userIdentificationValue=a1, createdOn=null, updatedOn=null)
+2024-07-29T21:27:38.206+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user saved: User(id=2, name=abhay, email=abhay@example.com, phoneNum=1234567890, password=$2a$10$ZWft9nQVRJq1VXeTXhGBJ.x.uLrA.zOsMpirMfOehToqlEicdM4J6, userType=USER, userStatus=ACTIVE, authorities=[USER], userIdentificationType=PAN, userIdentificationValue=a1, createdOn=2024-07-29 21:27:38.080158, updatedOn=Mon Jul 29 21:27:38 IST 2024)
+2024-07-29T21:27:38.377+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = user-microservice-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-07-29T21:27:38.503+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-07-29T21:27:38.830+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=user-microservice-producer-1] Instantiated an idempotent producer.
+2024-07-29T21:27:38.978+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-07-29T21:27:38.978+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-07-29T21:27:38.979+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1722268658973
+2024-07-29T21:27:40.120+05:30  INFO 11312 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=user-microservice-producer-1] Cluster ID: i_IDOsjFRWGy5kCAMyN6PQ
+2024-07-29T21:27:40.125+05:30  INFO 11312 --- [user-microservice] [kafka-producer-network-thread | user-microservice-producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=user-microservice-producer-1] ProducerId set to 2001 with epoch 0
+2024-07-29T21:27:40.167+05:30  INFO 11312 --- [user-microservice] [http-nio-8001-exec-1] c.e.u.service.UserService                : user saved msg published to kafka: {"NAME":"abhay","EMAIL":"abhay@example.com","PHONENUM":"1234567890","USERID":2}
+2024-07-29T21:29:22.196+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=user-microservice-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-07-29T21:29:22.214+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-07-29T21:29:22.214+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-07-29T21:29:22.214+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-07-29T21:29:22.215+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-07-29T21:29:22.216+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for user-microservice-producer-1 unregistered
+2024-07-29T21:29:22.221+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-29T21:29:22.224+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-29T21:29:22.238+05:30  INFO 11312 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
