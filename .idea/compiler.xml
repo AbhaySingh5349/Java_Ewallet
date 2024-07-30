@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="wallet-microservice" />
         <module name="user-microservice" />
         <module name="notification-microservice" />
       </profile>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="notification-microservice" options="-parameters" />
       <module name="user-microservice" options="-parameters" />
+      <module name="wallet-microservice" options="-parameters" />
     </option>
   </component>
 </project>
