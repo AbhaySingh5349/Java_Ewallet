@@ -1,4 +1,4 @@
-package com.ewallet.user_microservice.configuration;
+package com.ewallet.transaction_microservice.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import static org.springframework.security.config.Customizer.withDefaults;
 
 // whenever we want to create our own beans, we need '@Configuration' annotation
-// http://localhost:8081/spring-security
+// http://localhost:8084/spring-security
 
 @Configuration
 public class SecurityConfig {
@@ -20,8 +20,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers(HttpMethod.POST,"/user").permitAll()
-                        .requestMatchers(HttpMethod.GET,"/user").hasAnyAuthority("USER", "SERVICE")
+                        .requestMatchers(HttpMethod.POST,"/transaction").hasAuthority("USER") // users can initiate transaction
                         .anyRequest().permitAll())
                 .formLogin(withDefaults()) // we need a login form for accessing authorized routes (browser)
                 .httpBasic(withDefaults()) // for postman, we need to provide "Basic Auth"

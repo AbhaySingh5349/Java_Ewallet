@@ -36,7 +36,7 @@ public class UserMicroserviceApplication implements CommandLineRunner {
 				.build();
 
 		// since phone um has unique constraint
-		if(userRepository.findByPhoneNum("txn:service") == null){
+		if(userRepository.findByPhoneNum("txn_service") == null){
 			userRepository.save(transactionService);
 		}
 	}
