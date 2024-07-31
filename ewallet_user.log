@@ -699,3 +699,56 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 't
 2024-07-31T17:41:04.476+05:30  INFO 4048 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-07-31T17:41:04.521+05:30  INFO 4048 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-07-31T17:41:04.565+05:30  INFO 4048 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T18:02:49.470+05:30  INFO 2100 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 2100 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-31T18:02:49.473+05:30  INFO 2100 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-31T18:02:50.186+05:30  INFO 2100 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T18:02:50.248+05:30  INFO 2100 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2024-07-31T18:02:50.893+05:30  INFO 2100 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-31T18:02:50.907+05:30  INFO 2100 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-31T18:02:50.907+05:30  INFO 2100 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-31T18:02:50.966+05:30  INFO 2100 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-31T18:02:50.966+05:30  INFO 2100 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1446 ms
+2024-07-31T18:02:51.120+05:30  INFO 2100 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-31T18:02:51.177+05:30  INFO 2100 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-31T18:02:51.209+05:30  INFO 2100 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-31T18:02:51.521+05:30  INFO 2100 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T18:02:51.545+05:30  INFO 2100 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T18:02:51.864+05:30  INFO 2100 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32d0d7eb
+2024-07-31T18:02:51.871+05:30  INFO 2100 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T18:02:52.671+05:30  INFO 2100 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-31T18:02:52.724+05:30  INFO 2100 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T18:02:53.120+05:30  WARN 2100 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T18:02:53.149+05:30  INFO 2100 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-31T18:02:53.664+05:30  INFO 2100 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-31T18:02:53.676+05:30  INFO 2100 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 4.684 seconds (process running for 5.105)
+2024-07-31T18:03:25.369+05:30  INFO 2100 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31T18:03:25.370+05:30  INFO 2100 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-31T18:03:25.371+05:30  INFO 2100 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-31T21:14:44.569+05:30  INFO 2100 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T21:14:44.731+05:30  INFO 2100 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T21:14:44.830+05:30  INFO 2100 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T21:14:49.168+05:30  INFO 12888 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 21.0.4 with PID 12888 (C:\Users\ACER\IdeaProjects\Ewallet\user-microservice\target\classes started by ACER in C:\Users\ACER\IdeaProjects\Ewallet)
+2024-07-31T21:14:49.172+05:30  INFO 12888 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-31T21:14:50.049+05:30  INFO 12888 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T21:14:50.123+05:30  INFO 12888 --- [user-microservice] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-07-31T21:14:50.854+05:30  INFO 12888 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8001 (http)
+2024-07-31T21:14:50.866+05:30  INFO 12888 --- [user-microservice] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-31T21:14:50.866+05:30  INFO 12888 --- [user-microservice] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-31T21:14:50.934+05:30  INFO 12888 --- [user-microservice] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-31T21:14:50.934+05:30  INFO 12888 --- [user-microservice] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1703 ms
+2024-07-31T21:14:51.181+05:30  INFO 12888 --- [user-microservice] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-31T21:14:51.259+05:30  INFO 12888 --- [user-microservice] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-31T21:14:51.297+05:30  INFO 12888 --- [user-microservice] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-31T21:14:51.589+05:30  INFO 12888 --- [user-microservice] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T21:14:51.618+05:30  INFO 12888 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T21:14:51.933+05:30  INFO 12888 --- [user-microservice] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32d0d7eb
+2024-07-31T21:14:51.936+05:30  INFO 12888 --- [user-microservice] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T21:14:52.913+05:30  INFO 12888 --- [user-microservice] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-31T21:14:52.952+05:30  INFO 12888 --- [user-microservice] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T21:14:53.726+05:30  WARN 12888 --- [user-microservice] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T21:14:53.774+05:30  INFO 12888 --- [user-microservice] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-07-31T21:14:54.557+05:30  INFO 12888 --- [user-microservice] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8001 (http) with context path '/'
+2024-07-31T21:14:54.570+05:30  INFO 12888 --- [user-microservice] [main] c.e.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 5.894 seconds (process running for 6.454)
+2024-07-31T21:26:29.802+05:30  INFO 12888 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31T21:26:29.815+05:30  INFO 12888 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-31T21:26:29.877+05:30  INFO 12888 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 60 ms

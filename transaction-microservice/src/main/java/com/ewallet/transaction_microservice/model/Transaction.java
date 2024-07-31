@@ -31,6 +31,8 @@ public class Transaction {
 
     String purpose;
 
+    String transactionStatusMsg;
+
     @Enumerated(value = EnumType.STRING)
     TransactionStatus transactionStatus;
 
