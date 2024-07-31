@@ -77,4 +77,8 @@ public class UserService implements UserDetailsService {
 
         return user;
     }
+
+    public User getUserByPhoneNum(String phoneNum) {
+        return userRepository.findByPhoneNum(phoneNum);
+    }
 }

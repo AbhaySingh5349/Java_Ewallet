@@ -5,9 +5,7 @@ import com.ewallet.user_microservice.model.User;
 import com.ewallet.user_microservice.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -21,5 +19,10 @@ public class UserController {
     @PostMapping("/user")
     public User createUser(@RequestBody @Valid CreateUserRequest userRequest){
         return userService.createUser(userRequest);
+    }
+
+    @GetMapping("/user")
+    public User getUser(@RequestParam("phoneNum") String phoneNum){
+        return userService.getUserByPhoneNum(phoneNum);
     }
 }

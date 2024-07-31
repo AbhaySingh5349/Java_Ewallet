@@ -22,7 +22,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST,"/user").permitAll()
-//                        .requestMatchers(HttpMethod.GET,"/user").hasAnyAuthority("USER", "SERVICE")
+                        .requestMatchers(HttpMethod.GET,"/user").hasAuthority("USER")
                         .anyRequest().permitAll())
                 .formLogin(withDefaults()) // we need a login form for accessing authorized routes (browser)
                 .httpBasic(withDefaults()) // for postman, we need to provide "Basic Auth"
