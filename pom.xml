@@ -38,6 +38,7 @@
         <module>user-microservice</module>
         <module>notification-microservice</module>
         <module>wallet-microservice</module>
+        <module>transaction-microservice</module>
     </modules>
 
     <dependencyManagement>
@@ -55,6 +56,11 @@
             <dependency>
                 <groupId>com.ewallet</groupId>
                 <artifactId>wallet-microservice</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ewallet</groupId>
+                <artifactId>transaction-microservice</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

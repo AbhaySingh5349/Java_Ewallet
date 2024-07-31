@@ -29,7 +29,7 @@ public class UserCreationConsumer {
 
     @KafkaListener(topics = KafkaConstants.USER_CREATION_TOPIC, groupId = "notification-group")
     public void userCreated(String msg){
-        log.info("user created msg received: {}", msg);
+        log.info("user created msg consumed by kafka: {}", msg);
 
         try {
             ObjectNode objectNode = objectMapper.readValue(msg, ObjectNode.class);
