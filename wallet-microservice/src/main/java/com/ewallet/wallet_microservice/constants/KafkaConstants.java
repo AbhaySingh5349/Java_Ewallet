@@ -7,4 +7,6 @@ public interface KafkaConstants {
     String USER_CREATION_TOPIC = "user_created";
 
     String TRANSACTION_INITIATED_TOPIC = "wallet_transaction_initiated";
+
+    String TRANSACTION_UPDATED_TOPIC = "wallet_transaction_updated";
 }

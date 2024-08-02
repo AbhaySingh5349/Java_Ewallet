@@ -101,7 +101,7 @@ public class TransactionService implements UserDetailsService {
         String kafkaMsg = objectNode.toString();
         kafkaTemplate.send(KafkaConstants.TRANSACTION_INITIATED_TOPIC, kafkaMsg);
 
-        log.info("transaction initiated msg published to kafka: {}", kafkaMsg);
+        log.info("transaction service published initiated msg to wallet service: {}", kafkaMsg);
 
         return transaction.getTransactionId();
     }

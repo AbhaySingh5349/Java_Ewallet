@@ -5,4 +5,6 @@ package com.ewallet.transaction_microservice.constants;
 
 public interface KafkaConstants {
     String TRANSACTION_INITIATED_TOPIC = "wallet_transaction_initiated";
+
+    String TRANSACTION_UPDATED_TOPIC = "wallet_transaction_updated";
 }

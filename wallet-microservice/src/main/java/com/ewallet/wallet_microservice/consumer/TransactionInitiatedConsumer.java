@@ -5,7 +5,7 @@ package com.ewallet.wallet_microservice.consumer;
 
 import com.ewallet.wallet_microservice.constants.KafkaConstants;
 import com.ewallet.wallet_microservice.constants.TransactionInitiatedTopicConstants;
-import com.ewallet.wallet_microservice.constants.UserCreationTopicConstants;
+import com.ewallet.wallet_microservice.constants.TransactionUpdatedConstant;
 import com.ewallet.wallet_microservice.model.Wallet;
 import com.ewallet.wallet_microservice.repository.WalletRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -15,6 +15,7 @@ import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,16 +23,18 @@ import org.springframework.stereotype.Component;
 public class TransactionInitiatedConsumer {
     ObjectMapper objectMapper;
     WalletRepository walletRepository;
+    KafkaTemplate kafkaTemplate;
 
     @Autowired
-    public TransactionInitiatedConsumer(ObjectMapper objectMapper, WalletRepository walletRepository) {
+    public TransactionInitiatedConsumer(ObjectMapper objectMapper, WalletRepository walletRepository, KafkaTemplate kafkaTemplate) {
         this.objectMapper = objectMapper;
         this.walletRepository = walletRepository;
+        this.kafkaTemplate = kafkaTemplate;
     }
 
     @KafkaListener(topics = KafkaConstants.TRANSACTION_INITIATED_TOPIC, groupId = "wallet-group")
     public void transactionInitiated(String msg) throws JsonProcessingException {
-        log.info("transaction initiated msg consumed by kafka: {}", msg);
+        log.info("transaction initiated msg consumed by wallet produced by transaction service kafka: {}", msg);
 
         ObjectNode objectNode = objectMapper.readValue(msg, ObjectNode.class);
 
@@ -66,6 +69,22 @@ public class TransactionInitiatedConsumer {
             updateWallets(senderWallet, receiverWallet, amount);
             log.info("wallets updated");
         }
+
+        // publish message from wallet to transaction service can act as consumer & update transaction status in table
+        produceMessageForTransactionService(transactionId, status, statusMsg);
+    }
+
+    private void produceMessageForTransactionService(String transactionId, String status, String statusMsg) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+
+        objectNode.put(TransactionUpdatedConstant.STATUS, status);
+        objectNode.put(TransactionUpdatedConstant.STATUS_MSG, statusMsg);
+        objectNode.put(TransactionUpdatedConstant.TRANSACTION_ID, transactionId);
+
+        String kafkaMsg = objectNode.toString();
+        kafkaTemplate.send(KafkaConstants.TRANSACTION_UPDATED_TOPIC, kafkaMsg);
+
+        log.info("wallet service published transaction updates msg to transaction service: {}", kafkaMsg);
     }
 
     @Transactional
