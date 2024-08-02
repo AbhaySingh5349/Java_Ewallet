@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -21,6 +22,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -104,5 +106,13 @@ public class TransactionService implements UserDetailsService {
         log.info("transaction service published initiated msg to wallet service: {}", kafkaMsg);
 
         return transaction.getTransactionId();
+    }
+
+    public List<Transaction> getTransactionsInitiatedByLoggedInUser(String phoneNum, int pageNum, int limit) {
+        PageRequest pageRequest = PageRequest.of(pageNum, limit);
+
+//        Page<Transaction> response = transactionRepository.findBySenderPhoneNum(phoneNum, pageRequest);
+
+        return transactionRepository.findBySenderPhoneNum(phoneNum, pageRequest);
     }
 }

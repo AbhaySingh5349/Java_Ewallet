@@ -21,6 +21,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST,"/transaction").hasAuthority("USER") // users can initiate transaction
+                        .requestMatchers(HttpMethod.GET,"/transaction/all").hasAuthority("USER") // ensures authenticated users can fetch transactions initiated by them
                         .anyRequest().permitAll())
                 .formLogin(withDefaults()) // we need a login form for accessing authorized routes (browser)
                 .httpBasic(withDefaults()) // for postman, we need to provide "Basic Auth"

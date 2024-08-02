@@ -51,3 +51,6 @@
 2024-08-02T18:43:49.589+05:30  INFO 8292 --- [user-microservice] [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-08-02T18:43:49.592+05:30  INFO 8292 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-08-02T18:43:49.599+05:30  INFO 8292 --- [user-microservice] [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-08-02T19:19:25.564+05:30  INFO 8292 --- [user-microservice] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T19:19:25.659+05:30  INFO 8292 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T19:19:25.692+05:30  INFO 8292 --- [user-microservice] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
